@@ -1,0 +1,8 @@
+{
+  "name": "supabase-scripts",
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.3",
+    "dotenv": "^16.4.1"
+  }
+} 

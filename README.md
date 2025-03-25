@@ -13,7 +13,7 @@ A web application that allows users to login, select meals for tomorrow, and pro
 ## Prerequisites
 
 - Node.js (v14 or higher)
-- MongoDB
+- PostgreSQL (v12 or higher)
 - npm or yarn
 
 ## Setup
@@ -36,14 +36,17 @@ npm install
 cd ..
 ```
 
-4. Create a `.env` file in the root directory with the following variables:
+4. Create a PostgreSQL database named 'meal_management'
+
+5. Create a `.env` file in the root directory with the following variables:
 ```
-MONGODB_URI=mongodb://localhost:27017/meal-management
+DB_NAME=meal_management
+DB_USER=your_postgres_username
+DB_PASSWORD=your_postgres_password
+DB_HOST=localhost
 JWT_SECRET=your-secret-key
 PORT=5000
 ```
-
-5. Start MongoDB on your local machine.
 
 ## Running the Application
 
@@ -93,6 +96,7 @@ The application will be available at:
 - Backend:
   - Node.js
   - Express
-  - MongoDB
+  - PostgreSQL
+  - Sequelize ORM
   - JWT Authentication
   - Express Validator "# Hungno" 
